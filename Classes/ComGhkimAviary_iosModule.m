@@ -37,6 +37,7 @@
 #pragma mark Internal Memory Management
 -(void)dealloc
 {
+    NSLog(@"DEALLOC TIME",self);
     //RELEASE_TO_NIL(style);
     //RELEASE_TO_NIL(editorController);
 	[super dealloc];
@@ -103,7 +104,7 @@
 
 -(void)newEditorController:(UIImage *)source setDelegate:(id)param
 {
-    RELEASE_TO_NIL(editorController);
+    //RELEASE_TO_NIL(editorController);
 
     editorController = [[AFPhotoEditorController alloc] initWithImage:source];
     editorController.delegate = param;
@@ -113,7 +114,7 @@
 
 -(void)newEditorController:(UIImage *)source withTools:(NSArray *)toolKey setDelegate:(id)param
 {
-    RELEASE_TO_NIL(editorController);
+//    RELEASE_TO_NIL(editorController);
     NSArray *tools = [self convertToRealToolsKey:toolKey];
     NSDictionary *options = [NSDictionary 
                              dictionaryWithObject:tools 
@@ -162,7 +163,7 @@
     [context renderInputImage:source completion:^(UIImage *result) {
         // `result` will be nil if the session is canceled, or non-nil if the session was closed successfully and rendering completed   
         [self fireEvent:@"avResolutionFinished" withObject:[self convertResultDic:result]];
-        [editorController dismissModalViewControllerAnimated:YES];
+        [editorController dismissViewControllerAnimated:NO completion:nil];
     }];
 }
 
@@ -235,15 +236,27 @@
 -(void)photoEditor:(AFPhotoEditorController *)editor finishedWithImage:(UIImage *)image
 {
     [self fireEvent:@"avEditorFinished" withObject:[self convertResultDic:image]];
-    [editor dismissModalViewControllerAnimated:YES];
+    
+    if([editor.presentingViewController respondsToSelector:@selector(dismissViewControllerAnimated:completion:)])
+        [editor.presentingViewController dismissViewControllerAnimated:(YES) completion:nil];
+    else if([editor.presentingViewController respondsToSelector:@selector(dismissModalViewControllerAnimated:)])
+        [editor.presentingViewController dismissModalViewControllerAnimated:YES];
+    else
+        NSLog(@"Oooops, what system is this ?!!! - should never see this !");
     [editor release];
 }
 
 // This is called when editcontroller cancel.
 -(void)photoEditorCanceled:(AFPhotoEditorController *)editor
 {
+    
     [self fireEvent:@"avEditorCancel" withObject:nil];
-    [editor dismissModalViewControllerAnimated:YES];
+    if([editor.presentingViewController respondsToSelector:@selector(dismissViewControllerAnimated:completion:)])
+        [editor.presentingViewController dismissViewControllerAnimated:(YES) completion:nil];
+    else if([editor.presentingViewController respondsToSelector:@selector(dismissModalViewControllerAnimated:)])
+        [editor.presentingViewController dismissModalViewControllerAnimated:YES];
+    else
+        NSLog(@"Oooops, what system is this ?!!! - should never see this !");
     [editor release];
 }
 
