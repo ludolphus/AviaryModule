@@ -37,8 +37,8 @@
 #pragma mark Internal Memory Management
 -(void)dealloc
 {
-    RELEASE_TO_NIL(style);
-    RELEASE_TO_NIL(editorController);
+    //RELEASE_TO_NIL(style);
+    //RELEASE_TO_NIL(editorController);
 	[super dealloc];
 }
 -(void)didReceiveMemoryWarning:(NSNotification*)notification
@@ -235,7 +235,8 @@
 -(void)photoEditor:(AFPhotoEditorController *)editor finishedWithImage:(UIImage *)image
 {
     [self fireEvent:@"avEditorFinished" withObject:[self convertResultDic:image]];
-    [editor dismissModalViewControllerAnimated:YES];    
+    [editor dismissModalViewControllerAnimated:YES];
+    [editor release];
 }
 
 // This is called when editcontroller cancel.
@@ -243,6 +244,7 @@
 {
     [self fireEvent:@"avEditorCancel" withObject:nil];
     [editor dismissModalViewControllerAnimated:YES];
+    [editor release];
 }
 
 
