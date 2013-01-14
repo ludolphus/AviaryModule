@@ -231,18 +231,22 @@
 
 #pragma mark Delegates
 
+#define view_parentViewController(_view_) (([_view_ parentViewController] != nil || ![_view_ respondsToSelector:@selector(presentingViewController)]) ? [_view_ parentViewController] : [_view_ presentingViewController])
+
+
 // This is called when editcontroller done. 
 // Post edited image by notification.
 -(void)photoEditor:(AFPhotoEditorController *)editor finishedWithImage:(UIImage *)image
 {
     [self fireEvent:@"avEditorFinished" withObject:[self convertResultDic:image]];
     
-    if([editor.presentingViewController respondsToSelector:@selector(dismissViewControllerAnimated:completion:)])
+    if([view_parentViewController(editor) respondsToSelector:@selector(dismissViewControllerAnimated:completion:)])
         [editor.presentingViewController dismissViewControllerAnimated:(YES) completion:nil];
-    else if([editor.presentingViewController respondsToSelector:@selector(dismissModalViewControllerAnimated:)])
-        [editor.presentingViewController dismissModalViewControllerAnimated:YES];
+    else if([view_parentViewController(editor) respondsToSelector:@selector(dismissModalViewControllerAnimated:)])
+        [view_parentViewController(editor) dismissModalViewControllerAnimated:YES];
     else
         NSLog(@"Oooops, what system is this ?!!! - should never see this !");
+     
     [editor release];
 }
 
@@ -251,12 +255,14 @@
 {
     
     [self fireEvent:@"avEditorCancel" withObject:nil];
-    if([editor.presentingViewController respondsToSelector:@selector(dismissViewControllerAnimated:completion:)])
+    
+    if([view_parentViewController(editor) respondsToSelector:@selector(dismissViewControllerAnimated:completion:)])
         [editor.presentingViewController dismissViewControllerAnimated:(YES) completion:nil];
-    else if([editor.presentingViewController respondsToSelector:@selector(dismissModalViewControllerAnimated:)])
-        [editor.presentingViewController dismissModalViewControllerAnimated:YES];
+    else if([view_parentViewController(editor) respondsToSelector:@selector(dismissModalViewControllerAnimated:)])
+        [view_parentViewController(editor) dismissModalViewControllerAnimated:YES];
     else
         NSLog(@"Oooops, what system is this ?!!! - should never see this !");
+    
     [editor release];
 }
 
