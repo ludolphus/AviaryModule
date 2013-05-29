@@ -1,120 +1,0 @@
-Taviary-iphone
-v5
-r1
-cCheck dependencies
-cProcessPCH /var/folders/n9/y43nr7r97d7_vg6mllxwd1h809lw59/C/com.apple.Xcode.10088617/SharedPrecompiledHeaders/ComGhkimAviary_ios_Prefix-gggghfjynrjnicgqyjlgieusgsfk/ComGhkimAviary_ios_Prefix.pch.pth ComGhkimAviary_ios_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/aviary-iphone.build/Release-iphonesimulator/aviary-iphone.build/Objects-normal/i386/ComGhkimAviary_iosModule.o /Users/ashive/Developer/AviaryModule/Classes/ComGhkimAviary_iosModule.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/aviary-iphone.build/Release-iphonesimulator/aviary-iphone.build/Objects-normal/i386/ComGhkimAviary_iosModuleAssets.o /Users/ashive/Developer/AviaryModule/Classes/ComGhkimAviary_iosModuleAssets.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cLibtool /Users/ashive/Developer/AviaryModule/build/Release-iphonesimulator/libComGhkimAviary_ios.a normal i386
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk
-c00000000504916AD0000000000000110
-t1346967213
-s272
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c00000000507871DD00000000003DCEF0
-t1350070749
-s4050672
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c00000000507871DC00000000000015F7
-t1350070748
-s5623
-
-N/Users/ashive/Developer/AviaryModule/Classes/ComGhkimAviary_iosModule.m
-c0000000050F47CDB0000000000001CFE
-t1358200027
-s7422
-
-N/Users/ashive/Developer/AviaryModule/Classes/ComGhkimAviary_iosModuleAssets.m
-c0000000050F452E2000000000000011C
-t1358189282
-s284
-
-N/Users/ashive/Developer/AviaryModule/ComGhkimAviary_ios_Prefix.pch
-c0000000050F452E2000000000000003E
-t1358189282
-s62
-i<Foundation/Foundation.h>
-
-N/Users/ashive/Developer/AviaryModule/build/Release-iphonesimulator/libComGhkimAviary_ios.a
-t2
-s0
-
-N/Users/ashive/Developer/AviaryModule/build/aviary-iphone.build/Release-iphonesimulator/aviary-iphone.build/Objects-normal/i386/ComGhkimAviary_ios.LinkFileList
-c0000000050F47D35000000000000013A
-t1358200117
-s314
-
-N/Users/ashive/Developer/AviaryModule/build/aviary-iphone.build/Release-iphonesimulator/aviary-iphone.build/Objects-normal/i386/ComGhkimAviary_iosModule.o
-t2
-s0
-
-N/Users/ashive/Developer/AviaryModule/build/aviary-iphone.build/Release-iphonesimulator/aviary-iphone.build/Objects-normal/i386/ComGhkimAviary_iosModuleAssets.o
-t2
-s0
-
-N/Users/ashive/Developer/AviaryModule/libAviarySDK.a
-c0000000050F452E40000000001B94DFC
-t1358189284
-s28921340
-
-N/var/folders/n9/y43nr7r97d7_vg6mllxwd1h809lw59/C/com.apple.Xcode.10088617/SharedPrecompiledHeaders/ComGhkimAviary_ios_Prefix-gggghfjynrjnicgqyjlgieusgsfk/ComGhkimAviary_ios_Prefix.pch.pth
-t2
-s0
-
-CCheck dependencies
-r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesd4eecfb5b4a4b641^8cd8f3b5b4a4b641^---0#1#0#--18"Check dependencies36"95D89046-B936-4567-86C5-1393EEEA8081-
-
-CCompileC build/aviary-iphone.build/Release-iphonesimulator/aviary-iphone.build/Objects-normal/i386/ComGhkimAviary_iosModule.o /Users/ashive/Developer/AviaryModule/Classes/ComGhkimAviary_iosModule.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s379892918.614896
-e379892919.101827
-r1
-xCompileC
-xbuild/aviary-iphone.build/Release-iphonesimulator/aviary-iphone.build/Objects-normal/i386/ComGhkimAviary_iosModule.o
-x/Users/ashive/Developer/AviaryModule/Classes/ComGhkimAviary_iosModule.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compile /Users/ashive/Developer/AviaryModule/Classes/ComGhkimAviary_iosModule.m86a99db6b4a4b641^ed111ab7b4a4b641^---0#0#0#-19%DVTDocumentLocation2@87"file://localhost/Users/ashive/Developer/AviaryModule/Classes/ComGhkimAviary_iosModule.m0000000000000000^3811"CompileC build/aviary-iphone.build/Release-iphonesimulator/aviary-iphone.build/Objects-normal/i386/ComGhkimAviary_iosModule.o Classes/ComGhkimAviary_iosModule.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/ashive/Developer/AviaryModule    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin:/Applications/p4v.app/Contents/MacOS/p4v:/Users/ashive/gsutil"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wno-parentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wno-unused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DTI_VERSION= -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=4.0 -iquote /Users/ashive/Developer/AviaryModule/build/aviary-iphone.build/Release-iphonesimulator/aviary-iphone.build/ComGhkimAviary_ios-generated-files.hmap -I/Users/ashive/Developer/AviaryModule/build/aviary-iphone.build/Release-iphonesimulator/aviary-iphone.build/ComGhkimAviary_ios-own-target-headers.hmap -I/Users/ashive/Developer/AviaryModule/build/aviary-iphone.build/Release-iphonesimulator/aviary-iphone.build/ComGhkimAviary_ios-all-target-headers.hmap -iquote /Users/ashive/Developer/AviaryModule/build/aviary-iphone.build/Release-iphonesimulator/aviary-iphone.build/ComGhkimAviary_ios-project-headers.hmap -I/Users/ashive/Developer/AviaryModule/build/Release-iphonesimulator/include "-I/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/iphone/include" "-I/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/iphone/include/TiCore" -I/Users/ashive/Developer/AviaryModule/build/aviary-iphone.build/Release-iphonesimulator/aviary-iphone.build/DerivedSources/i386 -I/Users/ashive/Developer/AviaryModule/build/aviary-iphone.build/Release-iphonesimulator/aviary-iphone.build/DerivedSources -F/Users/ashive/Developer/AviaryModule/build/Release-iphonesimulator -DTI_POST_1_2 -include /var/folders/n9/y43nr7r97d7_vg6mllxwd1h809lw59/C/com.apple.Xcode.10088617/SharedPrecompiledHeaders/ComGhkimAviary_ios_Prefix-gggghfjynrjnicgqyjlgieusgsfk/ComGhkimAviary_ios_Prefix.pch -MMD -MT dependencies -MF /Users/ashive/Developer/AviaryModule/build/aviary-iphone.build/Release-iphonesimulator/aviary-iphone.build/Objects-normal/i386/ComGhkimAviary_iosModule.d --serialize-diagnostics /Users/ashive/Developer/AviaryModule/build/aviary-iphone.build/Release-iphonesimulator/aviary-iphone.build/Objects-normal/i386/ComGhkimAviary_iosModule.dia -c /Users/ashive/Developer/AviaryModule/Classes/ComGhkimAviary_iosModule.m -o /Users/ashive/Developer/AviaryModule/build/aviary-iphone.build/Release-iphonesimulator/aviary-iphone.build/Objects-normal/i386/ComGhkimAviary_iosModule.o36"29718F27-72B7-4424-810F-C2E76247125A-
-
-CCompileC build/aviary-iphone.build/Release-iphonesimulator/aviary-iphone.build/Objects-normal/i386/ComGhkimAviary_iosModuleAssets.o /Users/ashive/Developer/AviaryModule/Classes/ComGhkimAviary_iosModuleAssets.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s379892918.615483
-e379892918.683109
-r1
-xCompileC
-xbuild/aviary-iphone.build/Release-iphonesimulator/aviary-iphone.build/Objects-normal/i386/ComGhkimAviary_iosModuleAssets.o
-x/Users/ashive/Developer/AviaryModule/Classes/ComGhkimAviary_iosModuleAssets.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compile /Users/ashive/Developer/AviaryModule/Classes/ComGhkimAviary_iosModuleAssets.m66bc9db6b4a4b641^a0e0aeb6b4a4b641^---0#0#0#-19%DVTDocumentLocation2@93"file://localhost/Users/ashive/Developer/AviaryModule/Classes/ComGhkimAviary_iosModuleAssets.m0000000000000000^3847"CompileC build/aviary-iphone.build/Release-iphonesimulator/aviary-iphone.build/Objects-normal/i386/ComGhkimAviary_iosModuleAssets.o Classes/ComGhkimAviary_iosModuleAssets.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/ashive/Developer/AviaryModule    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin:/Applications/p4v.app/Contents/MacOS/p4v:/Users/ashive/gsutil"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wno-parentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wno-unused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DTI_VERSION= -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=4.0 -iquote /Users/ashive/Developer/AviaryModule/build/aviary-iphone.build/Release-iphonesimulator/aviary-iphone.build/ComGhkimAviary_ios-generated-files.hmap -I/Users/ashive/Developer/AviaryModule/build/aviary-iphone.build/Release-iphonesimulator/aviary-iphone.build/ComGhkimAviary_ios-own-target-headers.hmap -I/Users/ashive/Developer/AviaryModule/build/aviary-iphone.build/Release-iphonesimulator/aviary-iphone.build/ComGhkimAviary_ios-all-target-headers.hmap -iquote /Users/ashive/Developer/AviaryModule/build/aviary-iphone.build/Release-iphonesimulator/aviary-iphone.build/ComGhkimAviary_ios-project-headers.hmap -I/Users/ashive/Developer/AviaryModule/build/Release-iphonesimulator/include "-I/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/iphone/include" "-I/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/iphone/include/TiCore" -I/Users/ashive/Developer/AviaryModule/build/aviary-iphone.build/Release-iphonesimulator/aviary-iphone.build/DerivedSources/i386 -I/Users/ashive/Developer/AviaryModule/build/aviary-iphone.build/Release-iphonesimulator/aviary-iphone.build/DerivedSources -F/Users/ashive/Developer/AviaryModule/build/Release-iphonesimulator -DTI_POST_1_2 -include /var/folders/n9/y43nr7r97d7_vg6mllxwd1h809lw59/C/com.apple.Xcode.10088617/SharedPrecompiledHeaders/ComGhkimAviary_ios_Prefix-gggghfjynrjnicgqyjlgieusgsfk/ComGhkimAviary_ios_Prefix.pch -MMD -MT dependencies -MF /Users/ashive/Developer/AviaryModule/build/aviary-iphone.build/Release-iphonesimulator/aviary-iphone.build/Objects-normal/i386/ComGhkimAviary_iosModuleAssets.d --serialize-diagnostics /Users/ashive/Developer/AviaryModule/build/aviary-iphone.build/Release-iphonesimulator/aviary-iphone.build/Objects-normal/i386/ComGhkimAviary_iosModuleAssets.dia -c /Users/ashive/Developer/AviaryModule/Classes/ComGhkimAviary_iosModuleAssets.m -o /Users/ashive/Developer/AviaryModule/build/aviary-iphone.build/Release-iphonesimulator/aviary-iphone.build/Objects-normal/i386/ComGhkimAviary_iosModuleAssets.o36"B40B9AA3-6450-44C7-8A3B-0C3D37B1066C-
-
-CLibtool /Users/ashive/Developer/AviaryModule/build/Release-iphonesimulator/libComGhkimAviary_ios.a normal i386
-s379892919.108752
-e379892919.590535
-r1
-xLibtool
-x/Users/ashive/Developer/AviaryModule/build/Release-iphonesimulator/libComGhkimAviary_ios.a
-xnormal
-xi386
-o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC 
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Libtool build/Release-iphonesimulator/libComGhkimAviary_ios.a normal i38691f21bb7b4a4b641^532097b7b4a4b641^-159"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC -0#0#0#--1157"Libtool build/Release-iphonesimulator/libComGhkimAviary_ios.a normal i386    cd /Users/ashive/Developer/AviaryModule    setenv IPHONEOS_DEPLOYMENT_TARGET 4.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin:/Applications/p4v.app/Contents/MacOS/p4v:/Users/ashive/gsutil"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only i386 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -L/Users/ashive/Developer/AviaryModule/build/Release-iphonesimulator -L/Users/ashive/Developer/AviaryModule -filelist /Users/ashive/Developer/AviaryModule/build/aviary-iphone.build/Release-iphonesimulator/aviary-iphone.build/Objects-normal/i386/ComGhkimAviary_ios.LinkFileList -ObjC -framework Foundation -lAviarySDK -o /Users/ashive/Developer/AviaryModule/build/Release-iphonesimulator/libComGhkimAviary_ios.a36"0E792A10-A4FC-426F-B723-5783FEE41794-
-
-CProcessPCH /var/folders/n9/y43nr7r97d7_vg6mllxwd1h809lw59/C/com.apple.Xcode.10088617/SharedPrecompiledHeaders/ComGhkimAviary_ios_Prefix-gggghfjynrjnicgqyjlgieusgsfk/ComGhkimAviary_ios_Prefix.pch.pth ComGhkimAviary_ios_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s379892917.959765
-e379892918.607814
-r1
-xProcessPCH
-x/var/folders/n9/y43nr7r97d7_vg6mllxwd1h809lw59/C/com.apple.Xcode.10088617/SharedPrecompiledHeaders/ComGhkimAviary_ios_Prefix-gggghfjynrjnicgqyjlgieusgsfk/ComGhkimAviary_ios_Prefix.pch.pth
-xComGhkimAviary_ios_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection40"Precompile ComGhkimAviary_ios_Prefix.pch44faf5b5b4a4b641^cc9b9bb6b4a4b641^---0#0#0#-19%DVTDocumentLocation2@82"file://localhost/Users/ashive/Developer/AviaryModule/ComGhkimAviary_ios_Prefix.pch0000000000000000^3786"ProcessPCH /var/folders/n9/y43nr7r97d7_vg6mllxwd1h809lw59/C/com.apple.Xcode.10088617/SharedPrecompiledHeaders/ComGhkimAviary_ios_Prefix-gggghfjynrjnicgqyjlgieusgsfk/ComGhkimAviary_ios_Prefix.pch.pth ComGhkimAviary_ios_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/ashive/Developer/AviaryModule    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin:/Applications/p4v.app/Contents/MacOS/p4v:/Users/ashive/gsutil"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wno-parentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wno-unused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DTI_VERSION= -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=4.0 -iquote /Users/ashive/Developer/AviaryModule/build/aviary-iphone.build/Release-iphonesimulator/aviary-iphone.build/ComGhkimAviary_ios-generated-files.hmap -I/Users/ashive/Developer/AviaryModule/build/aviary-iphone.build/Release-iphonesimulator/aviary-iphone.build/ComGhkimAviary_ios-own-target-headers.hmap -I/Users/ashive/Developer/AviaryModule/build/aviary-iphone.build/Release-iphonesimulator/aviary-iphone.build/ComGhkimAviary_ios-all-target-headers.hmap -iquote /Users/ashive/Developer/AviaryModule/build/aviary-iphone.build/Release-iphonesimulator/aviary-iphone.build/ComGhkimAviary_ios-project-headers.hmap -I/Users/ashive/Developer/AviaryModule/build/Release-iphonesimulator/include "-I/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/iphone/include" "-I/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/iphone/include/TiCore" -I/Users/ashive/Developer/AviaryModule/build/aviary-iphone.build/Release-iphonesimulator/aviary-iphone.build/DerivedSources/i386 -I/Users/ashive/Developer/AviaryModule/build/aviary-iphone.build/Release-iphonesimulator/aviary-iphone.build/DerivedSources -F/Users/ashive/Developer/AviaryModule/build/Release-iphonesimulator -DTI_POST_1_2 --serialize-diagnostics /var/folders/n9/y43nr7r97d7_vg6mllxwd1h809lw59/C/com.apple.Xcode.10088617/SharedPrecompiledHeaders/ComGhkimAviary_ios_Prefix-gggghfjynrjnicgqyjlgieusgsfk/ComGhkimAviary_ios_Prefix.pch.dia -c /Users/ashive/Developer/AviaryModule/ComGhkimAviary_ios_Prefix.pch -o /var/folders/n9/y43nr7r97d7_vg6mllxwd1h809lw59/C/com.apple.Xcode.10088617/SharedPrecompiledHeaders/ComGhkimAviary_ios_Prefix-gggghfjynrjnicgqyjlgieusgsfk/ComGhkimAviary_ios_Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/n9/y43nr7r97d7_vg6mllxwd1h809lw59/C/com.apple.Xcode.10088617/SharedPrecompiledHeaders/ComGhkimAviary_ios_Prefix-gggghfjynrjnicgqyjlgieusgsfk/ComGhkimAviary_ios_Prefix.pch.d36"3DAC574B-6657-44C2-B0B0-45FC2C10ECEB-
-

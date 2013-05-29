@@ -26,6 +26,18 @@
 		24DD6CFA1134B3F500162E58 /* ComGhkimAviary_iosModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* ComGhkimAviary_iosModule.m */; };
 		24DE9E1111C5FE74003F90F6 /* ComGhkimAviary_iosModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* ComGhkimAviary_iosModuleAssets.h */; };
 		24DE9E1211C5FE74003F90F6 /* ComGhkimAviary_iosModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* ComGhkimAviary_iosModuleAssets.m */; };
+		7B96E49B17502E30006BC18C /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B96E49A17502E30006BC18C /* Accelerate.framework */; };
+		7B96E49D17502E37006BC18C /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B96E49C17502E36006BC18C /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		7B96E49F17502E41006BC18C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B96E49E17502E41006BC18C /* CoreData.framework */; };
+		7B96E4A117502E47006BC18C /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B96E4A017502E47006BC18C /* CoreText.framework */; };
+		7B96E4A317502E5F006BC18C /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B96E4A217502E5F006BC18C /* libsqlite3.0.dylib */; };
+		7B96E4A517502E66006BC18C /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B96E4A417502E66006BC18C /* libz.1.2.5.dylib */; };
+		7B96E4A717502E73006BC18C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B96E4A617502E73006BC18C /* MessageUI.framework */; };
+		7B96E4A917502E7C006BC18C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B96E4A817502E7C006BC18C /* OpenGLES.framework */; };
+		7B96E4AB17502E82006BC18C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B96E4AA17502E82006BC18C /* QuartzCore.framework */; };
+		7B96E4AD17502E88006BC18C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B96E4AC17502E88006BC18C /* StoreKit.framework */; };
+		7B96E4AF17502E95006BC18C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B96E4AE17502E95006BC18C /* SystemConfiguration.framework */; };
+		7B96E4B117502E9A006BC18C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B96E4B017502E9A006BC18C /* UIKit.framework */; };
 		86FA6F7815A7D33B00D19ABB /* libAviarySDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86FA6F7715A7D33B00D19ABB /* libAviarySDK.a */; };
 		86FA6F8015A7D36600D19ABB /* AFPhotoEditorContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 86FA6F7B15A7D36600D19ABB /* AFPhotoEditorContext.h */; };
 		86FA6F8115A7D36600D19ABB /* AFPhotoEditorController.h in Headers */ = {isa = PBXBuildFile; fileRef = 86FA6F7C15A7D36600D19ABB /* AFPhotoEditorController.h */; };
@@ -52,6 +64,20 @@
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
 		24DE9E0F11C5FE74003F90F6 /* ComGhkimAviary_iosModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComGhkimAviary_iosModuleAssets.h; path = Classes/ComGhkimAviary_iosModuleAssets.h; sourceTree = "<group>"; };
 		24DE9E1011C5FE74003F90F6 /* ComGhkimAviary_iosModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComGhkimAviary_iosModuleAssets.m; path = Classes/ComGhkimAviary_iosModuleAssets.m; sourceTree = "<group>"; };
+		7B34580717567FF000162DE8 /* AviaryDemo-iOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AviaryDemo-iOS-Info.plist"; sourceTree = "<group>"; };
+		7B96E49A17502E30006BC18C /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		7B96E49C17502E36006BC18C /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		7B96E49E17502E41006BC18C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7B96E4A017502E47006BC18C /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		7B96E4A217502E5F006BC18C /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		7B96E4A417502E66006BC18C /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		7B96E4A617502E73006BC18C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		7B96E4A817502E7C006BC18C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		7B96E4AA17502E82006BC18C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7B96E4AC17502E88006BC18C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		7B96E4AE17502E95006BC18C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7B96E4B017502E9A006BC18C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7BE7139B17568CB800653CBF /* AviarySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AviarySDKResources.bundle; sourceTree = "<group>"; };
 		86FA6F7715A7D33B00D19ABB /* libAviarySDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAviarySDK.a; sourceTree = "<group>"; };
 		86FA6F7B15A7D36600D19ABB /* AFPhotoEditorContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPhotoEditorContext.h; sourceTree = "<group>"; };
 		86FA6F7C15A7D36600D19ABB /* AFPhotoEditorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPhotoEditorController.h; sourceTree = "<group>"; };
@@ -68,6 +94,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B96E4B117502E9A006BC18C /* UIKit.framework in Frameworks */,
+				7B96E4AF17502E95006BC18C /* SystemConfiguration.framework in Frameworks */,
+				7B96E4AD17502E88006BC18C /* StoreKit.framework in Frameworks */,
+				7B96E4AB17502E82006BC18C /* QuartzCore.framework in Frameworks */,
+				7B96E4A917502E7C006BC18C /* OpenGLES.framework in Frameworks */,
+				7B96E4A717502E73006BC18C /* MessageUI.framework in Frameworks */,
+				7B96E4A517502E66006BC18C /* libz.1.2.5.dylib in Frameworks */,
+				7B96E4A317502E5F006BC18C /* libsqlite3.0.dylib in Frameworks */,
+				7B96E4A117502E47006BC18C /* CoreText.framework in Frameworks */,
+				7B96E49F17502E41006BC18C /* CoreData.framework in Frameworks */,
+				7B96E49D17502E37006BC18C /* AdSupport.framework in Frameworks */,
+				7B96E49B17502E30006BC18C /* Accelerate.framework in Frameworks */,
 				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
 				86FA6F7815A7D33B00D19ABB /* libAviarySDK.a in Frameworks */,
 			);
@@ -91,6 +129,8 @@
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
+				7B34580717567FF000162DE8 /* AviaryDemo-iOS-Info.plist */,
+				7BE7139B17568CB800653CBF /* AviarySDKResources.bundle */,
 			);
 			name = "aviary-iphone";
 			sourceTree = "<group>";
@@ -98,6 +138,18 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7B96E4B017502E9A006BC18C /* UIKit.framework */,
+				7B96E4AE17502E95006BC18C /* SystemConfiguration.framework */,
+				7B96E4AC17502E88006BC18C /* StoreKit.framework */,
+				7B96E4AA17502E82006BC18C /* QuartzCore.framework */,
+				7B96E4A817502E7C006BC18C /* OpenGLES.framework */,
+				7B96E4A617502E73006BC18C /* MessageUI.framework */,
+				7B96E4A417502E66006BC18C /* libz.1.2.5.dylib */,
+				7B96E4A217502E5F006BC18C /* libsqlite3.0.dylib */,
+				7B96E4A017502E47006BC18C /* CoreText.framework */,
+				7B96E49E17502E41006BC18C /* CoreData.framework */,
+				7B96E49C17502E36006BC18C /* AdSupport.framework */,
+				7B96E49A17502E30006BC18C /* Accelerate.framework */,
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -282,7 +334,10 @@
 					"-DDEBUG",
 					"-DTI_POST_1_2",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = ComGhkimAviary_ios;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -330,7 +385,10 @@
 					"\"$(SRCROOT)\"",
 				);
 				OTHER_CFLAGS = "-DTI_POST_1_2";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = ComGhkimAviary_ios;
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
