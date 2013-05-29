@@ -28,6 +28,9 @@
 </ios>
 ```
 
+* Make sure you add in the *AviarySDKResources.bundle* (located in the module folder), to your project files or it won't work! 
+  * Add it in **/platform/iphone/** and it will compile in during the build. Clean the project just in case.
+
 Author
 ========
 
