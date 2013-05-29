@@ -102,27 +102,28 @@
     return tools;
 }
 
-
-
--(void)newEditorController:(UIImage *)source
+-(void)newEditorController:(UIImage *)source 
 {
     
     editorController = [[AFPhotoEditorController alloc] initWithImage:source];
     [editorController setDelegate:self];
     
     [[TiApp app] showModalController: editorController animated: YES];
-//    RELEASE_TO_NIL(editorController);
-    /*
+}
+
+
+-(void)newEditorController:(UIImage *)source withTools:(NSArray *)toolKey
+{
+    
     NSArray *tools = [self convertToRealToolsKey:toolKey];
     NSDictionary *options = [NSDictionary 
                              dictionaryWithObject:tools 
                              forKey:kAFPhotoEditorControllerToolsKey];
     editorController = [[AFPhotoEditorController alloc] 
                         initWithImage:source 
-                        options:options];   
-    editorController.delegate = param;
-    style = [editorController style];
-    */
+                        options:options];
+    [editorController setDelegate:self];
+    
 }
 
 
@@ -138,7 +139,7 @@
         [self newEditorController:source];
     }else if ([params count] == 2){
         NSArray *tools = [NSArray arrayWithArray:(NSArray *)[params objectAtIndex:1]];
-        [self newEditorController:source];
+        [self newEditorController:source withTools:tools];
     }
 }
 
