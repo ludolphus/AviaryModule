@@ -22,7 +22,7 @@
      <plist>
          <dict>
              <key>Aviary-API-Key</key>
-             <string>mtu5yq1kvrrxfgio</string>
+             <string>YOURAPIKEYHERE</string>
          </dict>
      </plist>
 </ios>
