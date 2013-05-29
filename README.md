@@ -17,6 +17,15 @@
 <modules>
    <module platform="iphone" version="1.0">com.ghkim.aviary_ios</module>
 </modules>
+<ios>
+     <min-ios-ver>5.0</min-ios-ver>
+     <plist>
+         <dict>
+             <key>Aviary-API-Key</key>
+             <string>mtu5yq1kvrrxfgio</string>
+         </dict>
+     </plist>
+</ios>
 ```
 
 Author
