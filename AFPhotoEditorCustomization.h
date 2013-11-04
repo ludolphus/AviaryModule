@@ -24,10 +24,7 @@ extern NSString *const kAFEffects;     /* Effects */
 extern NSString *const kAFStickers;    /* Stickers */
 extern NSString *const kAFOrientation; /* Orientation */
 extern NSString *const kAFCrop;        /* Crop */
-extern NSString *const kAFBrightness;  /* Brightness */
-extern NSString *const kAFContrast;    /* Contrast */
-extern NSString *const kAFSaturation;  /* Saturation */
-extern NSString *const kAFWarmth;      /* Warmth */
+extern NSString *const kAFAdjustments;  /* Adjustments */
 extern NSString *const kAFSharpness;   /* Sharpness */
 extern NSString *const kAFDraw;        /* Draw */
 extern NSString *const kAFText;        /* Text */
@@ -36,7 +33,9 @@ extern NSString *const kAFWhiten;      /* Whiten */
 extern NSString *const kAFBlemish;     /* Blemish */
 extern NSString *const kAFMeme;        /* Meme */
 extern NSString *const kAFFrames;      /* Frames */
-extern NSString *const kAFFocus;   /* TiltShift */
+extern NSString *const kAFFocus;       /* TiltShift */
+extern NSString *const kAFSplash;      /* ColorSplash */
+
 
 /**
  Use this key to define the interface orientations you want to allow in
@@ -134,9 +133,7 @@ extern NSString *const kAFTextFillColors;   /* Text Tool Text Fill Colors */
     kAFStickers
     kAFOrientation
     kAFCrop
-    kAFBrightness
-    kAFContrast
-    kAFSaturation
+    kAFAdjustments
     kAFSharpness
     kAFDraw
     kAFText
@@ -207,5 +204,26 @@ extern NSString *const kAFTextFillColors;   /* Text Tool Text Fill Colors */
  */
 + (void)setCropToolCellWidth:(float)cropToolCellWidth;
 
+/**
+ This property sets the color of the status bar background on devices running iOS 7
+ 
+ @param statusBarColor The color of the status bar.
+ */
++ (void)setStatusBarBackgroundColor:(UIColor *)statusBarColor;
+
+/**
+ This property sets the UIStatusBarStyle of the Editor
+ 
+ @param statusBarStyle The status bar style to use.
+ */
++ (void)setStatusBarStyle:(UIStatusBarStyle)statusBarStyle;
+
+
+/**
+ Set this property to true if your app is builidng using the iOS6 SDK
+ 
+ @param usingIOS6SDK Whether your app is using the iOS 6 SDK
+ */
++ (void)setUsingIOS6SDK:(BOOL)usingIOS6SDK;
 
 @end

@@ -10,7 +10,6 @@
 @interface ComGhkimAviary_iosModule : TiModule <AFPhotoEditorControllerDelegate,UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 {
     AFPhotoEditorController *editorController;
-    AFPhotoEditorStyle *style;
 }
 
 @end

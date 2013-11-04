@@ -2,7 +2,7 @@
 
 ## Description
 
-TODO: Enter your module description here
+The Aviary module provides an interface to the [Aviary photo editor](http://www.aviary.com/).
 
 ## Accessing the aviary-iphone Module
 
@@ -14,25 +14,31 @@ The aviary-iphone variable is a reference to the Module object.
 
 ## Reference
 
-TODO: If your module has an API, you should document
-the reference here.
-
-### ___PROJECTNAMEASIDENTIFIER__.function
-
-TODO: This is an example of a module function.
-
-### ___PROJECTNAMEASIDENTIFIER__.property
-
-TODO: This is an example of a module property.
+- setUsingIOS6SDK(boolean)
+- setStatusBarBackgroundColor(color)
+- setStatusBarStyle(statusbarStyle)
+- setStatusBarBackgroundColorWhite()
+- setStatusBarBackgroundColorBlack()
+- newImageEditor(images, tools)
+- displayEditor()
 
 ## Usage
 
-TODO: Enter your usage example here
+var tools = ['kAFEnhance', 'kAFEffects', 'kAFFrames', 'kAFCrop', 'kAFSplash', 'kAFFocus', 'kAFOrientation', 'kAFAdjustments', 'kAFSharpness', 'kAFStickers', 'kAFDraw', 'kAFMeme', 'kAFText', 'kAFRedeye', 'kAFWhiten', 'kAFBlemish'];
+aviary.addEventListener('avEditorCancel', function(e) {alert('user cancelled photo editor')});
+aviary.addEventListener('avEditorFinished', function(e) {alert('do something with the image available in variable e')});
+aviary.setStatusBarBackgroundColor('#0000ff');
+aviary.setUsingIOS6SDK(0);
+aviary.setStatusBarStyle(Ti.UI.iPhone.StatusBar.LIGHT_CONTENT);
+// image is your image to be edited (use Ti.Media.openPhotoGallery or Ti.UI.createImageView for example to get an image)
+aviary.newImageEditor(image, tools);
+aviary.displayEditor();
 
 ## Author
 
-TODO: Enter your author name, email and other contact
-details you want to share here. 
+3.3.7 by Steven van Loef [Twitter](https://twitter.com/ludolphus) [App.net](https://app.net/ludolphus)
+1.1 by Alex Shive [alexshive](http://alexshive.com)
+1.0 by KimGeunHyeong [ghkim](https://github.com/ghkim)
 
 ## License
 

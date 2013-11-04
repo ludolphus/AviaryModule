@@ -12,8 +12,14 @@ var tools = ['kAFEffects', 'kAFOrientation', 'kAFBrightness', 'kAFContrast', 'kA
 function setFilter() {
 	Ti.API.log('setFilter() called');
 	var img = mainWindow.toImage();
-    	aviary.newImageEditor(img, tools);
-        aviary.displayEditor();
+    // set statusbar background color to blue (0000ff)
+    aviary.setStatusBarBackgroundColor('#0000ff');
+    // not using IOS 6 SDK
+    aviary.setUsingIOS6SDK(0);
+    // specify iOS 7 statusbar light content (see http://docs.appcelerator.com/titanium/latest/#!/api/Titanium.UI.iPhone.StatusBar and http://docs.appcelerator.com/titanium/latest/#!/api/Titanium.UI.iPhone-property-statusBarStyle)
+    aviary.setStatusBarStyle(Ti.UI.iPhone.StatusBar.LIGHT_CONTENT);
+    aviary.newImageEditor(img, tools);
+    aviary.displayEditor();
 	Ti.API.log('well well wlel');
 }
 
@@ -25,7 +31,7 @@ success:function(event)
 {
 
     var cropRect = event.cropRect;
-    image = event.media;//blob object
+    var image = event.media;//blob object
 
     // set image view
     if(event.mediaType == Ti.Media.MEDIA_TYPE_PHOTO)
@@ -43,10 +49,9 @@ success:function(event)
                 
             } else {
                 img_src.write(image.imageAsResized(320, img_src_height));
-                var image = Titanium.UI.createImageView({image:img_src.nativePath, width: 320 });
-                img = image.toImage();
+                var image2 = Titanium.UI.createImageView({image:img_src.nativePath, width: 320 });
+                img = image2.toImage();
             }
-	    
             
         } else {
             img = image;
@@ -89,7 +94,7 @@ startbutton.addEventListener('click',function(e) {
 });
 
 filterbutton.addEventListener('click',function() {
-	setFilter();	
+	setFilter();
 });
 
 win.open();

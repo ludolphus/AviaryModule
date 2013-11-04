@@ -26,7 +26,7 @@
 #pragma mark Lifecycle
 -(void)startup
 {
-	[super startup];	
+	[super startup];
 	NSLog(@"[INFO] %@ loaded",self);
 }
 
@@ -38,8 +38,6 @@
 -(void)dealloc
 {
     NSLog(@"DEALLOC TIME",self);
-    //RELEASE_TO_NIL(style);
-    //RELEASE_TO_NIL(editorController);
 	[super dealloc];
 }
 -(void)didReceiveMemoryWarning:(NSNotification*)notification
@@ -143,8 +141,6 @@
     }
 }
 
-
-
 // Image Processing to High-Resolution.
 // params example1 = [targetImage](Blob), example2 = [targetImage(Blob), context size(Hash)]
 -(void)newImageResolutionEditor:(id)params
@@ -180,54 +176,35 @@
     }
 }
 
-// Color Customization
--(void)setBackgroundColor:(id)rgba{
-    UIColor *color = [self convertToUIColor:rgba];
-    [style setBackgroundColor:color];
+-(void)setUsingIOS6SDK:(id)arg
+{
+	if ([TiUtils intValue:arg]) {
+		[AFPhotoEditorCustomization setUsingIOS6SDK:YES];
+	} else {
+		[AFPhotoEditorCustomization setUsingIOS6SDK:NO];
+	}
 }
 
--(void)setAccentColor:(id)rgba{
-    UIColor *color = [self convertToUIColor:rgba];
-    [style setAccentColor:color];
+-(void)setStatusBarBackgroundColor:(id)color
+{
+	UIColor *backgroundColor = [[TiUtils colorValue:color] _color];
+	[AFPhotoEditorCustomization setStatusBarBackgroundColor:backgroundColor];
 }
 
--(void)setTopBarBackgroundColor:(id)rgba{
-    UIColor *color = [self convertToUIColor:rgba];
-    [style setTopBarBackgroundColor:color];
+-(void) setStatusBarBackgroundColorWhite:(id)foo
+{
+	[AFPhotoEditorCustomization setStatusBarBackgroundColor:[UIColor whiteColor]];
 }
 
--(void)setTopBarTextColor:(id)rgba{
-    UIColor *color = [self convertToUIColor:rgba];
-    [style setTopBarTextColor:color];
+-(void) setStatusBarBackgroundColorBlack:(id)foo
+{
+	[AFPhotoEditorCustomization setStatusBarBackgroundColor:[UIColor blackColor]];
 }
 
--(void)setTopBarLeftButtonTextColor:(id)rgba{
-    UIColor *color = [self convertToUIColor:rgba];
-    [style setTopBarLeftButtonTextColor:color];
+-(void)setStatusBarStyle:(id)style
+{
+	[AFPhotoEditorCustomization setStatusBarStyle:[TiUtils intValue:style]];
 }
-
--(void)setTopBarLeftButtonBackgroundColor:(id)rgba{
-    UIColor *color = [self convertToUIColor:rgba];
-    [style setTopBarLeftButtonBackgroundColor:color];
-}
-
--(void)setButtonIconColor:(id)rgba{
-    UIColor *color = [self convertToUIColor:rgba];
-    [style setButtonIconColor:color];
-}
-
--(void)setButtonTextColor:(id)rgba{
-    UIColor *color = [self convertToUIColor:rgba];
-    [style setButtonTextColor:color];
-}
-
--(void)setPageControlUnselectedColor:(id)rgba{
-    UIColor *color = [self convertToUIColor:rgba];
-    [style setPageControlUnselectedColor:color];    
-}
-
-
-
 
 #pragma mark Delegates
 

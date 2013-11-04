@@ -43,7 +43,6 @@
 		86FA6F8115A7D36600D19ABB /* AFPhotoEditorController.h in Headers */ = {isa = PBXBuildFile; fileRef = 86FA6F7C15A7D36600D19ABB /* AFPhotoEditorController.h */; };
 		86FA6F8215A7D36600D19ABB /* AFPhotoEditorControllerOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 86FA6F7D15A7D36600D19ABB /* AFPhotoEditorControllerOptions.h */; };
 		86FA6F8315A7D36600D19ABB /* AFPhotoEditorSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 86FA6F7E15A7D36600D19ABB /* AFPhotoEditorSession.h */; };
-		86FA6F8415A7D36600D19ABB /* AFPhotoEditorStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 86FA6F7F15A7D36600D19ABB /* AFPhotoEditorStyle.h */; };
 		AA747D9F0F9514B9006C5449 /* ComGhkimAviary_ios_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* ComGhkimAviary_ios_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -203,7 +202,6 @@
 				86FA6F8115A7D36600D19ABB /* AFPhotoEditorController.h in Headers */,
 				86FA6F8215A7D36600D19ABB /* AFPhotoEditorControllerOptions.h in Headers */,
 				86FA6F8315A7D36600D19ABB /* AFPhotoEditorSession.h in Headers */,
-				86FA6F8415A7D36600D19ABB /* AFPhotoEditorStyle.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +231,7 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0500;
 			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "aviary-iphone" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -297,10 +295,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
 			buildSettings = {
-				ARCHS = (
-					armv6,
-					armv7,
-				);
 				"ARCHS[sdk=iphoneos*]" = (
 					armv6,
 					armv7,
@@ -326,6 +320,7 @@
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -352,10 +347,6 @@
 			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					armv6,
-					armv7,
-				);
 				"ARCHS[sdk=iphoneos*]" = (
 					armv6,
 					armv7,
@@ -379,7 +370,7 @@
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -400,10 +391,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
 			buildSettings = {
-				ARCHS = (
-					armv6,
-					armv7,
-				);
 				"ARCHS[sdk=iphoneos*]" = (
 					armv6,
 					armv7,
@@ -429,6 +416,8 @@
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
 					"-DDEBUG",
 					"-DTI_POST_1_2",
@@ -448,10 +437,6 @@
 			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					armv6,
-					armv7,
-				);
 				"ARCHS[sdk=iphoneos*]" = (
 					armv6,
 					armv7,
@@ -475,7 +460,7 @@
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DTI_POST_1_2";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = ComGhkimAviary_ios;

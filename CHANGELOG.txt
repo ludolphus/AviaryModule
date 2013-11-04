@@ -1,1 +1,11 @@
-Place your change log text here.  This file will be incorporated with your app at package time.
+## 3.3.7 (2013-11-04)
+
+Updated the Aviary module to use SDK 3.3.7 in combination with Titanium SDK 3.1.3 to make the module work on iOS 7
+
+New methods
+
+- setUsingIOS6SDK(boolean)
+- setStatusBarBackgroundColor(color)
+- setStatusBarStyle(statusbarStyle)
+- setStatusBarBackgroundColorWhite()
+- setStatusBarBackgroundColorBlack()
