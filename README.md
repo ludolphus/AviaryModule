@@ -35,7 +35,9 @@ Author
 ========
 
 &hearts; Big thanks to KimGeunHyeong for this module! 
+
 (dev.lasneo@gmail.com) : [tumblr](http://www.lasneo.tumblr.com/)
+
 Aviary SDK 3.3.7 update by Steven van Loef [Twitter](https://twitter.com/ludolphus) [App.net](https://app.net/ludolphus)
 
 
