@@ -38,6 +38,8 @@
 -(void)dealloc
 {
     NSLog(@"DEALLOC TIME",self);
+    //RELEASE_TO_NIL(style);
+    //RELEASE_TO_NIL(editorController);
 	[super dealloc];
 }
 -(void)didReceiveMemoryWarning:(NSNotification*)notification
@@ -114,12 +116,11 @@
 {
     
     NSArray *tools = [self convertToRealToolsKey:toolKey];
-    NSDictionary *options = [NSDictionary 
-                             dictionaryWithObject:tools 
-                             forKey:kAFPhotoEditorControllerToolsKey];
-    editorController = [[AFPhotoEditorController alloc] 
+    editorController = [[AFPhotoEditorController alloc]
                         initWithImage:source 
-                        options:options];
+                        ];
+    [AFPhotoEditorCustomization setToolOrder:tools];
+
     [editorController setDelegate:self];
     
 }
@@ -149,15 +150,15 @@
     [self newEditorController:source];
     __block AFPhotoEditorSession *session = [editorController session];
       
-    AFPhotoEditorContext *context;    
+    AFPhotoEditorContext *context;
     if ([params count] == 1){
-        context = [session createContext];
+        context = [session createContextWithImage:source];
     }else if ([params count] == 2){
-        context = [session createContextWithSize:[self convertToCGSize:(NSDictionary *)[params objectAtIndex:1]]];
+        context = [session createContextWithImage:source maxSize:[self convertToCGSize:(NSDictionary *)[params objectAtIndex:1]]];
     }
-    
-    [context renderInputImage:source completion:^(UIImage *result) {
-        // `result` will be nil if the session is canceled, or non-nil if the session was closed successfully and rendering completed   
+
+    [context render: ^(UIImage *result) {
+        // `result` will be nil if the session is canceled, or non-nil if the session was closed successfully and rendering completed
         [self fireEvent:@"avResolutionFinished" withObject:[self convertResultDic:result]];
         [editorController dismissViewControllerAnimated:NO completion:nil];
     }];
@@ -178,6 +179,7 @@
 
 -(void)setUsingIOS6SDK:(id)arg
 {
+	NSLog(@"[INFO] %d IOS6",[TiUtils intValue:arg]);
 	if ([TiUtils intValue:arg]) {
 		[AFPhotoEditorCustomization setUsingIOS6SDK:YES];
 	} else {
@@ -205,6 +207,56 @@
 {
 	[AFPhotoEditorCustomization setStatusBarStyle:[TiUtils intValue:style]];
 }
+
+/*
+// Color Customization
+-(void)setBackgroundColor:(id)rgba{
+    UIColor *color = [self convertToUIColor:rgba];
+    [style setBackgroundColor:color];
+}
+
+-(void)setAccentColor:(id)rgba{
+    UIColor *color = [self convertToUIColor:rgba];
+    [style setAccentColor:color];
+}
+
+-(void)setTopBarBackgroundColor:(id)rgba{
+    UIColor *color = [self convertToUIColor:rgba];
+    [style setTopBarBackgroundColor:color];
+}
+
+-(void)setTopBarTextColor:(id)rgba{
+    UIColor *color = [self convertToUIColor:rgba];
+    [style setTopBarTextColor:color];
+}
+
+-(void)setTopBarLeftButtonTextColor:(id)rgba{
+    UIColor *color = [self convertToUIColor:rgba];
+    [style setTopBarLeftButtonTextColor:color];
+}
+
+-(void)setTopBarLeftButtonBackgroundColor:(id)rgba{
+    UIColor *color = [self convertToUIColor:rgba];
+    [style setTopBarLeftButtonBackgroundColor:color];
+}
+
+-(void)setButtonIconColor:(id)rgba{
+    UIColor *color = [self convertToUIColor:rgba];
+    [style setButtonIconColor:color];
+}
+
+-(void)setButtonTextColor:(id)rgba{
+    UIColor *color = [self convertToUIColor:rgba];
+    [style setButtonTextColor:color];
+}
+
+-(void)setPageControlUnselectedColor:(id)rgba{
+    UIColor *color = [self convertToUIColor:rgba];
+    [style setPageControlUnselectedColor:color];    
+}
+
+*/
+
 
 #pragma mark Delegates
 

@@ -9,3 +9,8 @@ New methods
 - setStatusBarStyle(statusbarStyle)
 - setStatusBarBackgroundColorWhite()
 - setStatusBarBackgroundColorBlack()
+
+## 3.3.11 (2013-03-03)
+
+Updated the Aviary module to use SDK 3.3.11 which fixes some bugs (see http://developers.aviary.com/docs/ios/changelog)
+Updated module code removing deprecated Aviary calls

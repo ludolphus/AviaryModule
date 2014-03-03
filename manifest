@@ -2,7 +2,7 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 3.3.7
+version: 3.3.11
 apiversion: 2
 description: This is Aviary Titanium Mobile iPhone module.
 author: GeunHyeongKim(dev.lasneo@gmail.com)
