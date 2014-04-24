@@ -2,30 +2,20 @@
 
 ##Requirements
 
-- Titanium Mobile SDK 3.1.3GA.
+- Titanium Mobile SDK 3.2.0GA.
 - iOS SDK 6.0+
-- AviarySDK Version 3.3.11.
+- AviarySDK Version 4.0.1.
 
-##Installation for Mac OS X
+##Installation for iOS
 - Download AviaryModule project
-- Using your favorite text editor or the Mac PList editor, replace your key in AviaryDemo-iOS-Info.plist where it says "ENTERYOURKEYHERE"
 - Build your module from Terminal via "./build.py"
 - Extract and copy the module in your project under /modules/iphone/ or just copy the zip file and have it auto-uncompress 
 - Add the following in your tiapp.xml like below:
 
 ```
 <modules>
-   <module platform="iphone" version="3.3.11">com.ghkim.aviary_ios</module>
+   <module platform="iphone" version="4.0.1">com.ghkim.aviary</module>
 </modules>
-<ios>
-     <min-ios-ver>6.0</min-ios-ver>
-     <plist>
-         <dict>
-             <key>Aviary-API-Key</key>
-             <string>YOURAPIKEYHERE</string>
-         </dict>
-     </plist>
-</ios>
 ```
 
 * Make sure you add in the *AviarySDKResources.bundle* (located in the module folder), to your project files or it won't work! 
@@ -41,6 +31,8 @@ Author
 Aviary SDK 3.3.7 update by Steven van Loef [Twitter](https://twitter.com/ludolphus) [App.net](https://app.net/ludolphus)
 
 Aviary SDK 3.3.11 update by Steven van Loef [Twitter](https://twitter.com/ludolphus) [App.net](https://app.net/ludolphus)
+
+Aviary SDK 4.0.1 update by Steven van Loef [Twitter](https://twitter.com/ludolphus) [App.net](https://app.net/ludolphus)
 
 
  License

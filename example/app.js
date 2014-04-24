@@ -6,21 +6,17 @@ var win = Ti.UI.createWindow({
 var mainWindow = Ti.UI.createView({ height: 320, top:0, width: Ti.UI.FILL });
 var iv = Titanium.UI.createImageView({ top:0, width: 320});
 
-var aviary = require('com.ghkim.aviary_ios');
+var aviary = require('com.ghkim.aviary');
 var tools = ['kAFEffects', 'kAFOrientation', 'kAFBrightness', 'kAFContrast', 'kAFSharpness'];
 
 function setFilter() {
 	Ti.API.log('setFilter() called');
 	var img = mainWindow.toImage();
-    // set statusbar background color to blue (0000ff)
-    aviary.setStatusBarBackgroundColor('#0000ff');
-    // not using IOS 6 SDK
-    aviary.setUsingIOS6SDK(0);
     // specify iOS 7 statusbar light content (see http://docs.appcelerator.com/titanium/latest/#!/api/Titanium.UI.iPhone.StatusBar and http://docs.appcelerator.com/titanium/latest/#!/api/Titanium.UI.iPhone-property-statusBarStyle)
     aviary.setStatusBarStyle(Ti.UI.iPhone.StatusBar.LIGHT_CONTENT);
-    aviary.newImageEditor(img, tools);
+    aviary.newImageEditor({apikey:'yourAviaryAPIkey', secret: 'yourAviarySecret', image: img, tools: tools});
     aviary.displayEditor();
-	Ti.API.log('well well wlel');
+	Ti.API.log('well well well');
 }
 
 function selectPhoto() {
