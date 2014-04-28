@@ -10,8 +10,6 @@ aviary-iphone.xcodeproj/xcuserdata/steven.xcuserdatad/xcschemes/aviary-iphone.xc
 
 *.xcscheme
 
-*.h
-
 *.xcsettings
 
 build/aviary-iphone.build/Release-iphonesimulator/aviary-iphone.build/aviary-iphone.dep
@@ -33,3 +31,7 @@ build/aviary-iphone.build/Release-iphoneos/aviary-iphone.build/aviary-iphone.dep
 aviary-iphone.xcodeproj/project.xcworkspace/xcuserdata/steven.xcuserdatad/UserInterfaceState.xcuserstate
 
 aviary-iphone.xcodeproj/project.xcworkspace/xcuserdata/steven.xcuserdatad/UserInterfaceState.xcuserstate
+
+.DS_Store
+
+.DS_Store
