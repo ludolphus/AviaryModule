@@ -4,7 +4,7 @@
 
 - Titanium Mobile SDK 3.2.0GA.
 - iOS SDK 6.0+
-- AviarySDK Version 4.0.1.
+- AviarySDK Version 4.1.0
 
 ##Installation for iOS
 - Download AviaryModule project
@@ -14,7 +14,7 @@
 
 ```
 <modules>
-   <module platform="iphone" version="4.0.1">com.ghkim.aviary</module>
+   <module platform="iphone" version="4.1.0">com.ghkim.aviary</module>
 </modules>
 ```
 
@@ -33,6 +33,8 @@ Aviary SDK 3.3.7 update by Steven van Loef [Twitter](https://twitter.com/ludolph
 Aviary SDK 3.3.11 update by Steven van Loef [Twitter](https://twitter.com/ludolphus) [App.net](https://app.net/ludolphus)
 
 Aviary SDK 4.0.1 update by Steven van Loef [Twitter](https://twitter.com/ludolphus) [App.net](https://app.net/ludolphus)
+
+Aviary SDK 4.1.0 update by Steven van Loef [Twitter](https://twitter.com/ludolphus) [App.net](https://app.net/ludolphus)
 
 
  License

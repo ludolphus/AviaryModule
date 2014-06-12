@@ -67,7 +67,7 @@
 #pragma mark Private APIs
 -(void)modalEditorController:(id)param
 {
-    [[TiApp app] showModalController: editorController animated: YES];      
+    [[TiApp app] showModalController: editorController animated: YES];
 }
 
 // rgba = [red,green,blue,alpha]
@@ -140,9 +140,22 @@
 
     [editorController setDelegate:self];
     
+    [[TiApp app] showModalController: editorController animated: YES];
 }
 
 #pragma Public APIs
+
+// Set the API key and secret
+-(void)setAPIkey:(id)params
+{
+	ENSURE_UI_THREAD_1_ARG(params);
+	ENSURE_SINGLE_ARG(params, NSDictionary);
+
+	static dispatch_once_t onceToken;
+	dispatch_once(&onceToken, ^{
+		[AFPhotoEditorController setAPIKey:[params objectForKey:@"apikey"] secret:[params objectForKey:@"secret"]];
+	});
+}
 
 // Init and Allocation editcontroller.
 // params example1 = [targetImage](Blob), example2 = [targetImage(Blob), tools(Array)]

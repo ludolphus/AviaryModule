@@ -21,3 +21,7 @@ Updated the Aviary module to use SDK 4.0.1
 Updated module code removing deprecated Aviary calls
 The newImageEditor method changed and now uses an object to pass parameters
 Using new method for passing apikey/secret, check the newImageEditor method in index.md for details
+
+## 4.1.0 (2014-06-12)
+
+Updated the Aviary module to use SDK 4.1.0

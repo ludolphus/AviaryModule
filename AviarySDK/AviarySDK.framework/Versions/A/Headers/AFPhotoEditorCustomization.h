@@ -23,6 +23,7 @@ extern NSString *const kAFText;        /* Text */
 extern NSString *const kAFRedeye;      /* Redeye */
 extern NSString *const kAFWhiten;      /* Whiten */
 extern NSString *const kAFBlemish;     /* Blemish */
+extern NSString *const kAFBlur;        /* Blur */
 extern NSString *const kAFMeme;        /* Meme */
 extern NSString *const kAFFrames;      /* Frames */
 extern NSString *const kAFFocus;       /* TiltShift */
