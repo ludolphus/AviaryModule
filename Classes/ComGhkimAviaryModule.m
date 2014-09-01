@@ -114,6 +114,9 @@
     for (NSString *key in toolsKey){
         NSString *lowcase = [key lowercaseString];
         NSString *realKey = [lowcase substringFromIndex:3];
+	if ([realKey isEqualToString: @"adjustments"]) {
+		realKey = @"adjust";
+	}
         [tools addObject:realKey];
     }
     return tools;
