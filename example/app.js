@@ -8,6 +8,7 @@ var iv = Titanium.UI.createImageView({ top:0, width: 320});
 
 var aviary = require('com.ghkim.aviary');
 var tools = ['kAFEffects', 'kAFOrientation', 'kAFBrightness', 'kAFContrast', 'kAFSharpness'];
+var crops = ["Avatar", 400, 400, "Cover", 960, 260];
 
 function setFilter() {
 	Ti.API.log('setFilter() called');
@@ -15,6 +16,8 @@ function setFilter() {
     // specify iOS 7 statusbar light content (see http://docs.appcelerator.com/titanium/latest/#!/api/Titanium.UI.iPhone.StatusBar and http://docs.appcelerator.com/titanium/latest/#!/api/Titanium.UI.iPhone-property-statusBarStyle)
     aviary.setStatusBarStyle(Ti.UI.iPhone.StatusBar.LIGHT_CONTENT);
     aviary.newImageEditor({apikey:'yourAviaryAPIkey', secret: 'yourAviarySecret', image: img, tools: tools});
+    // or with custom crops:
+    // aviary.newImageEditor({apikey:'yourAviaryAPIkey', secret: 'yourAviarySecret', image: img, tools: tools, crops: crops});
     aviary.displayEditor();
 	Ti.API.log('well well well');
 }

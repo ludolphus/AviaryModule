@@ -25,3 +25,11 @@ Using new method for passing apikey/secret, check the newImageEditor method in i
 ## 4.1.0 (2014-06-12)
 
 Updated the Aviary module to use SDK 4.1.0
+
+## 4.2.0 (2014-07-28)
+
+Updated the Aviary module to use SDK 4.2.0
+
+## 4.2.1 (2015-01-19)
+
+Added support for 64-bit

@@ -21,6 +21,7 @@ The aviary-iphone variable is a reference to the Module object.
 
 - setStatusBarStyle(statusbarStyle)
 - newImageEditor({apikey:'yourAviaryAPIkey', secret:'yourAviarySecret', image: imageBlob, tools: toolsArray})
+- newImageEditor({apikey:'yourAviaryAPIkey', secret:'yourAviarySecret', image: imageBlob, tools: toolsArray, crops: cropsArray});
 - displayEditor()
 
 ## Usage
@@ -33,8 +34,19 @@ aviary.setStatusBarStyle(Ti.UI.iPhone.StatusBar.LIGHT_CONTENT);
 aviary.newImageEditor({apikey:'yourAviaryAPIkey', secret: 'yourAviarySecret', image: imageBlob, tools: tools});
 aviary.displayEditor();
 
+// or with custom crops:
+var crops = ["Avatar", 400, 400, "Cover", 960, 260];
+var tools = ['kAFEnhance', 'kAFEffects', 'kAFFrames', 'kAFCrop', 'kAFSplash', 'kAFFocus', 'kAFOrientation', 'kAFAdjustments', 'kAFSharpness', 'kAFStickers', 'kAFDraw', 'kAFMeme', 'kAFText', 'kAFRedeye', 'kAFWhiten', 'kAFBlemish'];
+aviary.addEventListener('avEditorCancel', function(e) {alert('user cancelled photo editor')});
+aviary.addEventListener('avEditorFinished', function(e) {alert('do something with the image available in variable e')});
+aviary.newImageEditor({apikey:'yourAviaryAPIkey', secret: 'yourAviarySecret', image: imageBlob, tools: tools, crops: crops});
+aviary.displayEditor();
+
+
 ## Authors
 
+4.2.1 by Steven van Loef [Twitter](https://twitter.com/ludolphus) [App.net](https://app.net/ludolphus)
+4.2.0 by Steven van Loef [Twitter](https://twitter.com/ludolphus) [App.net](https://app.net/ludolphus)
 4.1.0 by Steven van Loef [Twitter](https://twitter.com/ludolphus) [App.net](https://app.net/ludolphus)
 4.0.1 by Steven van Loef [Twitter](https://twitter.com/ludolphus) [App.net](https://app.net/ludolphus)
 3.3.11 by Steven van Loef [Twitter](https://twitter.com/ludolphus) [App.net](https://app.net/ludolphus)

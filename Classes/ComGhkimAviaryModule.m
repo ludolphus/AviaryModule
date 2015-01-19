@@ -114,6 +114,9 @@
     for (NSString *key in toolsKey){
         NSString *lowcase = [key lowercaseString];
         NSString *realKey = [lowcase substringFromIndex:3];
+		if ([realKey isEqualToString: @"adjustments"]) {
+			realKey = @"adjust";
+		}
         [tools addObject:realKey];
     }
     return tools;
@@ -125,22 +128,34 @@
     editorController = [[AFPhotoEditorController alloc] initWithImage:source];
     [editorController setDelegate:self];
     
-    [[TiApp app] showModalController: editorController animated: YES];
+//    [[TiApp app] showModalController: editorController animated: YES];
 }
 
 
 -(void)newEditorController:(UIImage *)source withTools:(NSArray *)toolKey
 {
-    
+
     NSArray *tools = [self convertToRealToolsKey:toolKey];
-    editorController = [[AFPhotoEditorController alloc]
-                        initWithImage:source 
-                        ];
+    [AFPhotoEditorCustomization setToolOrder:tools];
+	[self newEditorController:source];
+}
+
+-(void)newEditorController:(UIImage *)source withTools:(NSArray *)toolKey withCrops:(NSArray *)crops
+{
+	
+    NSArray *tools = [self convertToRealToolsKey:toolKey];
     [AFPhotoEditorCustomization setToolOrder:tools];
 
-    [editorController setDelegate:self];
-    
-    [[TiApp app] showModalController: editorController animated: YES];
+	NSMutableArray *croptools = [[[NSMutableArray alloc]initWithCapacity:[crops count] / 3]autorelease];
+	for (int i = 0; i < [crops count]; i += 3) {
+		[croptools addObject: @{kAFCropPresetName: crops[i],kAFCropPresetHeight : crops[i + 1], kAFCropPresetWidth: crops[i + 2]}];
+	}
+	[AFPhotoEditorCustomization setCropToolOriginalEnabled:YES];
+	[AFPhotoEditorCustomization setCropToolCustomEnabled:YES];
+	[AFPhotoEditorCustomization setCropToolInvertEnabled: YES];
+	[AFPhotoEditorCustomization setCropToolPresets:croptools];
+	
+	[self newEditorController:source];
 }
 
 #pragma Public APIs
@@ -177,7 +192,14 @@
 
     UIImage *source = [self convertToUIImage:[params objectForKey:@"image"]];
 	NSArray *tools = [NSArray arrayWithArray:(NSArray *)[params objectForKey:@"tools"]];
-	[self newEditorController:source withTools:tools];
+	NSArray *crops = [NSArray arrayWithArray:(NSArray *)[params objectForKey:@"crops"]];
+
+	if ([crops count] != 0) {
+		[self newEditorController:source withTools:tools withCrops:crops];
+	} else {
+		NSArray *crops = @[@"Square", @1.0f, @1.0f, @"3:4", @3.0f, @4.0f, @"4:6", @4.0f, @6.0f, @"5:7", @5.0f, @7.0f, @"8:10", @8.0f, @10.0f, @"9:16", @9.0f, @16.0f];
+		[self newEditorController:source withTools:tools withCrops:crops];
+	}
 }
 
 // Image Processing to High-Resolution.
@@ -221,6 +243,15 @@
 -(void)setStatusBarStyle:(id)style
 {
 	[AFPhotoEditorCustomization setStatusBarStyle:[TiUtils intValue:style]];
+}
+
+-(void)setCancelApplyButtons:(id)params
+{
+	NSArray *cancel = @[kAFLeftNavigationTitlePresetCancel, kAFLeftNavigationTitlePresetBack, kAFLeftNavigationTitlePresetExit];
+	NSArray *apply = @[kAFRightNavigationTitlePresetDone, kAFRightNavigationTitlePresetNext, kAFRightNavigationTitlePresetSave,kAFRightNavigationTitlePresetSend];
+	
+	[AFPhotoEditorCustomization setLeftNavigationBarButtonTitle:cancel[[[params objectForKey:@"cancel"] integerValue]]];
+	[AFPhotoEditorCustomization setRightNavigationBarButtonTitle:apply[[[params objectForKey:@"save"] integerValue]]];
 }
 
 #pragma mark Delegates

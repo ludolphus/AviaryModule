@@ -3,10 +3,11 @@
 
 module/.DS_Store
 
+AviarySDK/*
+module/AviarySDKResources.bundle/*
+
 build/*
 aviary-iphone.xcodeproj/xcuserdata/steven.xcuserdatad/xcschemes/aviary-iphone.xcscheme
-
-.DS_Store
 
 *.xcscheme
 
@@ -32,6 +33,3 @@ aviary-iphone.xcodeproj/project.xcworkspace/xcuserdata/steven.xcuserdatad/UserIn
 
 aviary-iphone.xcodeproj/project.xcworkspace/xcuserdata/steven.xcuserdatad/UserInterfaceState.xcuserstate
 
-.DS_Store
-
-.DS_Store
