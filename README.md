@@ -4,7 +4,9 @@
 
 - Titanium Mobile SDK 3.2.0GA.
 - iOS SDK 6.0+
-- AviarySDK Version 4.1.0
+- AviarySDK Version 4.2.0
+
+Because of GitHub max file size issues (100MB) the source no longer includes the AviarySDK framework. It is included in the module zip. Also make sure to update the .bundle located in the module folder.
 
 ##Installation for iOS
 - Download AviaryModule project
@@ -35,6 +37,8 @@ Aviary SDK 3.3.11 update by Steven van Loef [Twitter](https://twitter.com/ludolp
 Aviary SDK 4.0.1 update by Steven van Loef [Twitter](https://twitter.com/ludolphus) [App.net](https://app.net/ludolphus)
 
 Aviary SDK 4.1.0 update by Steven van Loef [Twitter](https://twitter.com/ludolphus) [App.net](https://app.net/ludolphus)
+
+Aviary SDK 4.2.1 update by Steven van Loef [Twitter](https://twitter.com/ludolphus) [App.net](https://app.net/ludolphus)
 
 
  License

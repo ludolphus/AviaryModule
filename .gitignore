@@ -4,7 +4,6 @@
 module/.DS_Store
 
 AviarySDK/*
-module/AviarySDKResources.bundle/*
 
 build/*
 aviary-iphone.xcodeproj/xcuserdata/steven.xcuserdatad/xcschemes/aviary-iphone.xcscheme
