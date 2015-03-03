@@ -1,5 +1,9 @@
 #Aviary iphone module for Titanium Mobile
 
+NOTICE: please check out this new module which uses the Adobe Create SDK: https://github.com/kosso/TiAdobeCreativeSDK
+
+I probably won't be updating this module anymore.
+
 ##Requirements
 
 - Titanium Mobile SDK 3.2.0GA.
